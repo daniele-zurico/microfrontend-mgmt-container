@@ -1,0 +1,20 @@
+<mat-list>
+	<h3 mat-subheader>Users</h3>
+	<mat-list-item *ngFor="let folder of users" (click)="navigateTo(folder.url)" class="item">
+		<mat-icon mat-list-icon>{{folder.icon}}</mat-icon>
+		<h4 mat-line>{{folder.name}}</h4>
+	</mat-list-item>
+	<mat-divider *ngIf="users.length > 1"></mat-divider>
+	
+	<h3 mat-subheader>Aircraft Definitions</h3>
+	<mat-list-item *ngFor="let note of aircraft_def" (click)="navigateTo(note.url)" class="item">
+		<mat-icon mat-list-icon>{{note.icon}}</mat-icon>
+		<h4 mat-line>{{note.name}}</h4>
+	</mat-list-item>
+	
+	<!--<h3 mat-subheader>Catalogues</h3>-->
+	<!--<mat-list-item *ngFor="let note of catalogues" (click)="navigateTo(note.url)" class="item">-->
+		<!--<mat-icon mat-list-icon>{{note.icon}}</mat-icon>-->
+		<!--<h4 mat-line>{{note.name}}</h4>-->
+	<!--</mat-list-item>-->
+</mat-list>

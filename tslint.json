@@ -15,14 +15,14 @@
     "forin": true,
     "import-blacklist": [
       true,
-      "rxjs"
+      "rxjs",
+      "rxjs/Rx"
     ],
     "import-spacing": true,
     "indent": [
       true,
       "spaces"
     ],
-    "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [
       true,
@@ -117,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "mgmt",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "mgmt",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

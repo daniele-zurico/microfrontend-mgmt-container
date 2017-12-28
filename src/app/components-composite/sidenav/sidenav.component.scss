@@ -1,0 +1,40 @@
+$border-color: rgba(255, 255, 255, 0.15);
+h3 {
+  color: white !important;
+  padding-bottom: 11px !important;
+  height: 32px !important;
+  line-height: 0 !important;
+  &:first-child {
+    border-top: 0px;
+  }
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.item {
+  cursor: pointer !important;
+  color: white;
+  height: 30px !important;
+
+  ::ng-deep.mat-list-item-content {
+    height: 26px !important;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin: 5px;
+    .mat-list-icon {
+      width: 18px;
+      height: 18px;
+      font-size: 18px;
+      box-sizing: content-box;
+      border-radius: 50%;
+      padding: 0px;
+    }
+    .mat-list-text {
+      padding: 0 5px;
+    }
+    .mat-line {
+      font-size: 14px;
+    }
+  }
+
+}

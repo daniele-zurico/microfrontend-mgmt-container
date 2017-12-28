@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "iag-management-tool"
+    "name": "management-tool"
   },
   "apps": [
     {
@@ -17,9 +17,8 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "mgmt",
       "styles": [
-        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

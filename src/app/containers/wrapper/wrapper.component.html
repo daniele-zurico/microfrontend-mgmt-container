@@ -1,0 +1,22 @@
+<mat-sidenav-container class="mgmt-container"
+                      [hidden]="!showHeader">
+	
+	<mgmt-navbar (onBurgerClick)="sidenav.toggle()"
+	                 [hidden]="!showHeader"></mgmt-navbar>
+	<mat-sidenav-container>
+		
+		<mat-sidenav [hidden]="!showHeader"
+		            #sidenav
+		            mode="side"
+		            [opened]="showHeader == true ? true : false">
+			<mgmt-sidenav [hidden]="!showHeader"></mgmt-sidenav>
+		</mat-sidenav>
+		
+		<mgmt-iframe-cmpst #iframeCmp
+		                       [header]="showHeader"
+		                       (loaded)="isLoading=true">
+		</mgmt-iframe-cmpst>
+	</mat-sidenav-container>
+</mat-sidenav-container>
+
+
